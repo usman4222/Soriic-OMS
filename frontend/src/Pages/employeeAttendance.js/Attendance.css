@@ -1,0 +1,96 @@
+.doughnut {
+  width: 300px;
+}
+
+.do {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 80px;
+}
+
+.main-r1 {
+  width: 100%;
+  height: 60px;
+}
+
+.main-r1-b1 {
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: Montserrat;
+}
+
+.main-r1-b1 a {
+  text-decoration: none;
+}
+
+.main-r1-2 {
+  background: #B9F2A1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: Montserrat;
+}
+
+.status {
+  padding-top: 10px;
+}
+
+.cv {
+  background: #000;
+}
+
+.search-data {
+  padding: 60px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dough-chart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.df {
+  width: 500px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+
+  .att-btn {
+    background: none;
+  }
+
+  .do {
+    /* background: #000; */
+    padding-top: 70%;
+  }
+  .main-r1-b1 a{
+    padding-top: 20px;
+  }
+  .dough-chart{
+    padding-top: 60%;
+  }
+
+}
+
+@media screen and (max-width: 425px) {
+
+  .do {
+    padding-top: 140%;
+  }
+  .dough-chart{
+    padding-top: 120%;
+  }
+
+}
