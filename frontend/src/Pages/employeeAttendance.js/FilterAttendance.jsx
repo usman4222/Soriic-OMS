@@ -102,7 +102,7 @@ const FilterAttendance = () => {
 
     return (
         <Fragment>
-            {loading ? <Loader /> : (
+            {/* {loading ? <Loader /> : ( */}
                 <div className='main'>
                     <div className='row w-full main1-r1'>
                         <div className='col-lg-2 main1-r1-b1'>
@@ -182,7 +182,7 @@ const FilterAttendance = () => {
                                             </div>
                                             <div className='col-lg-2 main-r1-b1'>
                                                 <Link to={`/attendancelist/${user._id}`}>
-                                                    <button>Attendance List</button>
+                                                    <button className='text-gray-500'>Attendance List</button>
                                                 </Link>
                                             </div>
                                         </div>
@@ -195,7 +195,7 @@ const FilterAttendance = () => {
                         </div>
                     </div>
                 </div>
-            )}
+            {/* )} */}
         </Fragment>
     )
 }

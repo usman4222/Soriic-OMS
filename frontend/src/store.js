@@ -1,10 +1,8 @@
 import { combineReducers, applyMiddleware, createStore } from 'redux';
 import { thunk } from 'redux-thunk';
-import { composeWithDevTools } from 'redux-devtools-extension';
 import {
     allAdminUsersReducer,
-    deleteUserReducer,
-    userReducer,
+    deleteUserReducer,    userReducer,
 } from './reducers/userReducer';
 import { addUserReducer } from './reducers/addUserReducer';
 import { allUsersReducer } from './reducers/allUserReducer';
@@ -49,8 +47,6 @@ const rootReducer = combineReducers({
     currentMonthRevenue: currentMonthTotalRevenueReducer
 });
 
-const composedEnhancers = composeWithDevTools(applyMiddleware(thunk));
-
-const store = createStore(rootReducer, composedEnhancers);
+const store = createStore(rootReducer, applyMiddleware(thunk));
 
 export default store;

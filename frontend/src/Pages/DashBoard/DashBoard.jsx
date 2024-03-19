@@ -151,7 +151,7 @@ const DashBoard = () => {
                                                     {/* {user && user.role === "admin" ? ( */}
                                                     <p className="text-2xl text-center "><CountUp end={totalCurrentMonthExpenses} duration={2} /></p>
                                                     {/* ) : <p className="text-2xl text-center ">0</p>} */}
-                                                    <p className="text-lg text-center text-gray-600">Monthly Expense</p>
+                                                    <p className="text-lg text-center text-gray-600">Expenses</p>
                                                 </div>
                                             </div>
                                         </div>

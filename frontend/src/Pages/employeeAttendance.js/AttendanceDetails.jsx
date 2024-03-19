@@ -90,7 +90,7 @@ const AttendanceDetails = () => {
 
     return (
         <Fragment>
-            {loading ? <Loader /> : (
+            {/* {loading ? <Loader /> : ( */}
                 <div className='main'>
                     <div className='row w-full'>
                         <div className='col-lg-2'>
@@ -127,7 +127,7 @@ const AttendanceDetails = () => {
                                     </div>
                                     <div className='col-lg-2 main-r1-b1'>
                                         <Link to={`/searchattendance/${user._id}`}>
-                                            <button>Search Attendance</button>
+                                            <button className='text-gray-500'>Search Attendance</button>
                                         </Link>
                                     </div>
                                 </div>
@@ -140,7 +140,7 @@ const AttendanceDetails = () => {
                         </div>
                     </div>
                 </div>
-            )}
+            {/* )} */}
         </Fragment>
     )
 }
