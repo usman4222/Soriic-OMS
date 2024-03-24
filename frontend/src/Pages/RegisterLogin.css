@@ -1,0 +1,108 @@
+.main-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 0;
+}
+.login {
+    width: 350px;
+    height: 550px;
+    background: #1C2B36;
+    border-radius: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    transition: .8s ease-in-out all;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.login h2 {
+    color: #fff;
+    font-weight: 600;
+    font-size: 30px;
+    text-align: center;
+    padding: 40px;
+    transition: .8s ease all;
+}
+
+.login form {
+    margin-bottom: 160px;
+}
+.login input {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 30px;
+    border-radius: 5px;
+    outline: none;
+    margin: 30px 0;
+}
+.login button {
+    color: #fff;
+    font-size: 15px;
+    background: #344854;
+    padding: 10px 60px;
+    border-radius: 10px;
+}
+.submitBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.register {
+    width: 350px;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    background-color: #eee;
+    border-radius: 60% / 10%;
+    transform: translateY(80%);
+    transition: .8s ease-in-out all;
+    position: absolute;
+    cursor: pointer;
+}
+.register.transformed {
+    transform: translateY(15%);
+}
+.scaleDown{
+    transform: translateY(-20px);
+    transition: .8s ease all;
+}
+.register h2 {
+    color: #1C2B36;
+    font-weight: 600;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 90px;
+}
+.register input {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 30px;
+    border-radius: 5px;
+    outline: none;
+    margin: 30px 0;
+}
+.register button {
+    color: #fff;
+    font-size: 15px;
+    background: #344854;
+    padding: 10px 60px;
+    border-radius: 10px;
+}
+.submitBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px;
+}
+.login a{
+    color: #fff;
+    text-align: center;
+}

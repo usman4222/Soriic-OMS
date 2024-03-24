@@ -1,0 +1,29 @@
+.pageNotFound{
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    height: 100vh;
+    padding: 10vmax;
+}
+.pageNotFound > svg{
+    font-size: 7vmax;
+    color: #0D8174;
+}
+.pageNotFound > p{
+    font-size: 2vmax;
+    font-family: 'Montserrat';
+}
+.pageNotFound > a{
+    background: rgb(51, 51, 51);
+    color: white;
+    margin: 2vmax;
+    padding: 1vmax 3vmax;
+    cursor: pointer;
+    text-decoration: none;
+    border: none;
+    font: 400 1vmax "Roboto";
+    font-family: 'Montserrat';
+}
