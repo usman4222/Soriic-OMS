@@ -64,7 +64,7 @@ function App() {
             <Route element={<UpdateUserAttendance />} path="/updateattendance/:userId/:attendanceId" />
             <Route element={<Logout />} path="/logout" />
             <Route element={<Search />} path="/Search" />
-            <Route element={<Loader />} path="/loader" />
+            {/* <Route element={<Loader />} path="/loader" /> */}
           </>
         ) : (
           <Route path="/login" element={<RegisterLogin />} />
