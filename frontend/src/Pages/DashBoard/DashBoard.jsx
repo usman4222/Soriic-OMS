@@ -99,7 +99,7 @@ const DashBoard = () => {
 
     return (
         <Fragment>
-            {loading ? <Loader /> : (
+            {/* {loading ? <Loader /> : ( */}
                 <div className='main'>
                     <div className='row main-r1'>
                         <div className='col-lg-2  main-r1-b1'>
@@ -185,7 +185,7 @@ const DashBoard = () => {
                         </div>
                     </div>
                 </div>
-            )}
+            {/* )} */}
         </Fragment>
     );
 };

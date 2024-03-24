@@ -73,7 +73,7 @@ const AddUser = () => {
 
     return (
         <Fragment>
-            {loading ? <Loader /> : (
+            {/* {loading ? <Loader /> : ( */}
                 <div className='main'>
                     <div className='row w-full main1-r1'>
                         <div className='col-lg-2 main1-r1-b1'>
@@ -149,7 +149,7 @@ const AddUser = () => {
                         </div>
                     </div>
                 </div>
-            )}
+            {/* )} */}
         </Fragment>
     );
 };

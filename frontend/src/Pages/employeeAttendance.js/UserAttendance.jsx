@@ -67,7 +67,7 @@ const UpdateUser = () => {
 
     return (
         <Fragment>
-            {loading ? <Loader /> : (
+            {/* {loading ? <Loader /> : ( */}
                 <div className='man'>
                     <div className='row w-full'>
                         <div className='col-lg-2'>
@@ -114,7 +114,7 @@ const UpdateUser = () => {
                         </div>
                     </div>
                 </div>
-            )}
+            {/* )} */}
         </Fragment>
     );
 };
