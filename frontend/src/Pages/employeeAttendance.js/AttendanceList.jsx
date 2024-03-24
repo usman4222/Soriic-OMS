@@ -89,7 +89,7 @@ const AttendanceList = () => {
                             </div>
                             <div className='dashboard'>
                                 <div className='productsListContainer'>
-                                    <h1 className='productListHeading'>Attendance List</h1>
+                                    <h1 className='productListHeading'>Attendance List of Current Month</h1>
                                     {attendanceArray.length > 0 ? (
                                         <table className='table'>
                                             <thead>

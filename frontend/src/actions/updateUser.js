@@ -19,7 +19,7 @@ export const updateUserDetails = (id, userData) => async (dispatch) => {
         const config = {
             headers: { "Content-Type": "application/json" }
         }
-        const { data } = await axios.put(`http://localhost:400/api/v1/updateemployee/${id}`, userData, config);
+        const { data } = await axios.put(`http://localhost:4000/api/v1/updateemployee/${id}`, userData, config);
 
         dispatch({
             type: UPDATE_USER_SUCCESS,
@@ -43,7 +43,7 @@ export const getUserDetails = (id) => async (dispatch) => {
     try {
         dispatch({ type: GET_USER_REQUEST })
 
-        const { data } = await axios.get(`http://localhost:400/api/v1/employee/${id}`)
+        const { data } = await axios.get(`http://localhost:4000/api/v1/employee/${id}`)
 
         dispatch({ type: GET_USER_SUCCESS, payload: data.user })
     } catch (error) {

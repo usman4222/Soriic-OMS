@@ -105,11 +105,11 @@ const AllUser = () => {
 
     const renderActionButton = (id) => (
         <Fragment>
-            <Link to={`/updateuser/${id}`} className='edit'>
-                <MdEdit />
+            <Link to={`/updateuser/${id}`} className='bg-[#1C2B36] hover:bg-blue-700 text-white font-bold py-2 px-2 mr-3 rounded inline-flex items-center'>
+                <MdEdit className='text-white mr-2' />
             </Link>
-            <button onClick={() => deleteUserHandler(id)}>
-                <MdDeleteForever />
+            <button onClick={() => deleteUserHandler(id)} className='bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-2 rounded'>
+                <MdDeleteForever className='text-white mr-2' />
             </button>
         </Fragment>
     );
@@ -129,68 +129,68 @@ const AllUser = () => {
 
     return (
         <Fragment>
-                <div className='main' method="GET">
-                    <div className='row w-full main1-r1'>
-                        <div className='col-lg-2 main1-r1-b1'>
-                            <Sidebar />
-                        </div>
-                        <div className='col-lg-10 main1-r1-b2'>
-                            <div className='row'>
-                                <div className='col-lg-12'>
-                                    <Header />
-                                </div>
+            <div className='main' method="GET">
+                <div className='row w-full main1-r1'>
+                    <div className='col-lg-2 main1-r1-b1'>
+                        <Sidebar />
+                    </div>
+                    <div className='col-lg-10 main1-r1-b2'>
+                        <div className='row'>
+                            <div className='col-lg-12'>
+                                <Header />
                             </div>
-                            <div className='dashboard'>
-                                <div className='productsListContainer'>
-                                    <h1 className='productListHeading'>All Employees</h1>
-                                    <div>
-                                        <form className='searchBox' onSubmit={searchSubmitHandler}>
-                                            <input
-                                                type='text'
-                                                placeholder='Search a Employee by Name...'
-                                                onChange={(e) => setKeyword(e.target.value)}
-                                                required
-                                            />
-                                            <input type='submit' value='Search' />
-                                        </form>
-                                    </div>
-                                    {rows.length > 0 ? (
-                                        <table className='table '>
-                                            <thead>
-                                                <tr>
-                                                    <th style={{ textAlign: 'center', paddingLeft: 30}}>Index</th>
-                                                    <th style={{ textAlign: 'center' }}>Name</th>
-                                                    <th style={{ textAlign: 'center' }}>F.Name</th>
-                                                    <th style={{ textAlign: 'center' }}>Phone</th>
-                                                    <th style={{ textAlign: 'center' }}>Address</th>
-                                                    <th style={{ textAlign: 'center' }}>Designation</th>
-                                                    <th style={{ textAlign: 'center' }}>Role</th>
-                                                    <th style={{ textAlign: 'center' }}>Action</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                {rows.map((item, index) => (
-                                                    <tr key={index} style={{ backgroundColor: index % 2 === 0 ? '#f2f2f2' : '#ffffff' }}>
-                                                        <td style={{ textAlign: 'center' }}>{item.index}</td>
-                                                        <td style={{ textAlign: 'center' }}>{item.name}</td>
-                                                        <td style={{ textAlign: 'center' }}>{item.fatherName}</td>
-                                                        <td style={{ textAlign: 'center' }}>0{item.phone}</td>
-                                                        <td style={{ textAlign: 'center' }}>{item.address}</td>
-                                                        <td style={{ textAlign: 'center' }}>{item.designation}</td>
-                                                        <td style={{ textAlign: 'center' }}>{item.role}</td>
-                                                        <td style={{ textAlign: 'center' }}>{item.action}</td>
-                                                    </tr>
-                                                ))}
-                                            </tbody>
-                                        </table>
-                                    ) : (
-                                        <p style={{ textAlign: 'center' }}>No Employees data available</p>
-                                    )}
+                        </div>
+                        <div className='dashboard'>
+                            <div className='productsListContainer'>
+                                <h1 className='productListHeading'>All Employees</h1>
+                                <div>
+                                    <form className='searchBox' onSubmit={searchSubmitHandler}>
+                                        <input
+                                            type='text'
+                                            placeholder='Search a Employee by Name...'
+                                            onChange={(e) => setKeyword(e.target.value)}
+                                            required
+                                        />
+                                        <input type='submit' value='Search' />
+                                    </form>
                                 </div>
+                                {rows.length > 0 ? (
+                                    <table className='table '>
+                                        <thead>
+                                            <tr>
+                                                <th style={{ textAlign: 'center', paddingLeft: 30 }}>Index</th>
+                                                <th style={{ textAlign: 'center' }}>Name</th>
+                                                <th style={{ textAlign: 'center' }}>F.Name</th>
+                                                <th style={{ textAlign: 'center' }}>Phone</th>
+                                                <th style={{ textAlign: 'center' }}>Address</th>
+                                                <th style={{ textAlign: 'center' }}>Designation</th>
+                                                <th style={{ textAlign: 'center' }}>Role</th>
+                                                <th style={{ textAlign: 'center' }}>Action</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            {rows.map((item, index) => (
+                                                <tr key={index} style={{ backgroundColor: index % 2 === 0 ? '#f2f2f2' : '#ffffff' }}>
+                                                    <td style={{ textAlign: 'center' }}>{item.index}</td>
+                                                    <td style={{ textAlign: 'center' }}>{item.name}</td>
+                                                    <td style={{ textAlign: 'center' }}>{item.fatherName}</td>
+                                                    <td style={{ textAlign: 'center' }}>0{item.phone}</td>
+                                                    <td style={{ textAlign: 'center' }}>{item.address}</td>
+                                                    <td style={{ textAlign: 'center' }}>{item.designation}</td>
+                                                    <td style={{ textAlign: 'center' }}>{item.role}</td>
+                                                    <td style={{ textAlign: 'center' }}>{item.action}</td>
+                                                </tr>
+                                            ))}
+                                        </tbody>
+                                    </table>
+                                ) : (
+                                    <p style={{ textAlign: 'center' }}>No Employees data available</p>
+                                )}
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
         </Fragment>
     )
 }
