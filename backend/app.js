@@ -8,7 +8,7 @@ const app = express();
 const path = require('path')
 
 // Load environment variables
-dotenv.config({ path: "backend/config/config.env" });
+dotenv.config({ path: "./config.js" });
 
 // Middleware setup
 app.use(cors());
