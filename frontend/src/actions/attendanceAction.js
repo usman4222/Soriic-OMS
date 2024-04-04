@@ -38,7 +38,7 @@ export const updateUserCon = (id, attendanceData) => async (dispatch) => {
             ]
         };
 
-        const { data } = await axios.put(`http://localhost:4000/api/v1/attendance/${id}`, payload, config);
+        const { data } = await axios.put(`https://soriic-b-rana-usmans-projects.vercel.app/api/v1/attendance/${id}`, payload, config);
 
         dispatch({
             type: UPDATE_USER_SUCCESS,
@@ -63,7 +63,7 @@ export const getSearchAttendance = (userId, startDate, endDate) => async (dispat
             endDate: encodeURIComponent(endDate),
         });
 
-        const url = `http://localhost:4000/api/v1/searchattendance/${userId}?${queryParams}`;
+        const url = `https://soriic-b-rana-usmans-projects.vercel.app/api/v1/searchattendance/${userId}?${queryParams}`;
 
         const { data } = await axios.get(url);
 
@@ -95,7 +95,7 @@ export const getUserAttendance = (userId) => async (dispatch) => {
         dispatch({ type: GET_USER_ATTENDANCE_REQUEST });
 
         if (userId) {
-            const { data } = await axios.get(`http://localhost:4000/api/v1/getuserattendance/${userId}`);
+            const { data } = await axios.get(`https://soriic-b-rana-usmans-projects.vercel.app/api/v1/getuserattendance/${userId}`);
 
             dispatch({
                 type: GET_USER_ATTENDANCE_SUCCESS,
@@ -126,7 +126,7 @@ export const getSingleAttendanceDetails = (userId, attendanceId) => async (dispa
     try {
         dispatch({ type: GET_USER_SINGLE_ATTENDANCE_REQUEST });
 
-        const { data } = await axios.get(`http://localhost:4000/api/v1/getsingleattendance/${userId}/${attendanceId}`);
+        const { data } = await axios.get(`https://soriic-b-rana-usmans-projects.vercel.app/api/v1/getsingleattendance/${userId}/${attendanceId}`);
 
         dispatch({ type: GET_USER_SINGLE_ATTENDANCE_SUCCESS, payload: data });
     } catch (error) {
@@ -153,7 +153,7 @@ export const changeStatusAction = (userId, attendanceId, userData) => async (dis
             headers: { "Content-Type": "application/json" }
         }
 
-        const { data } = await axios.put(`http://localhost:4000/api/v1/editsingleattendance/${userId}/${attendanceId}`, userData, config);
+        const { data } = await axios.put(`https://soriic-b-rana-usmans-projects.vercel.app/api/v1/editsingleattendance/${userId}/${attendanceId}`, userData, config);
 
         dispatch({
             type: UPDATE_USER_ATTENDANCE_SUCCESS,

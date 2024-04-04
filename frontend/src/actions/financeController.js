@@ -26,7 +26,7 @@ export const addNewExpense = (expense) => async (dispatch) => {
             headers: { "Content-Type": "application/json" }
         }
 
-        const { data } = await axios.post(`http://localhost:4000/api/v1/finance`, expense, config);
+        const { data } = await axios.post(`https://soriic-b-rana-usmans-projects.vercel.app/api/v1/finance`, expense, config);
 
         dispatch({
             type: FINANCE_SUCCESS,
@@ -49,7 +49,7 @@ export const getExpenseList = () => async (dispatch) => {
     try {
         dispatch({ type: GET_ALL_EXPENSES_LIST_REQUEST });
 
-        const { data } = await axios.get(`http://localhost:4000/api/v1/expenselist`);
+        const { data } = await axios.get(`https://soriic-b-rana-usmans-projects.vercel.app/api/v1/expenselist`);
         dispatch({ type: GET_ALL_EXPENSES_LIST_SUCCESS, payload: data });
     } catch (error) {
         dispatch({
@@ -70,7 +70,7 @@ export const getAllExpenses = ({ startDate, endDate }) => async (dispatch) => {
             endDate: encodeURIComponent(endDate),
         });
 
-        const url = `http://localhost:4000/api/v1/allexpenses?${queryParams}`;
+        const url = `https://soriic-b-rana-usmans-projects.vercel.app/api/v1/allexpenses?${queryParams}`;
 
         const { data } = await axios.get(url);
 
@@ -91,7 +91,7 @@ export const getCurrentMonthExpenses = () => async (dispatch) => {
     try {
         dispatch({ type: GET_CURRENT_MONTH_TOTAL_REQUEST });
 
-        const { data } = await axios.get(`http://localhost:4000/api/v1/getExpenses`);
+        const { data } = await axios.get(`https://soriic-b-rana-usmans-projects.vercel.app/api/v1/getExpenses`);
 
         dispatch({ type: GET_CURRENT_MONTH_TOTAL_SUCCESS, payload: data.totalCurrentMonthExpenses });
 

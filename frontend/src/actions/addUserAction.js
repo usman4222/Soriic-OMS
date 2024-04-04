@@ -19,7 +19,7 @@ export const addNewUser = (userData) => async (dispatch) => {
         const config = {
             headers: { "Content-Type": "application/json" }
         }
-        const { data } = await axios.post(`http://localhost:4000/api/v1/newemployee`, userData, config);
+        const { data } = await axios.post(`https://soriic-b-rana-usmans-projects.vercel.app/api/v1/newemployee`, userData, config);
 
         dispatch({
             type: ADD_USER_SUCCESS,
@@ -44,7 +44,7 @@ export const getAllUsers = (keyword="") => async (dispatch) => {
         dispatch({ type: ALL_USERS_REQUEST })
 
         // const { data } = await axios.get(`${link}/allemployees`)
-        const { data } = await axios.get(`http://localhost:4000/api/v1/allemployees?keyword=${keyword}`);
+        const { data } = await axios.get(`https://soriic-b-rana-usmans-projects.vercel.app/api/v1/allemployees?keyword=${keyword}`);
 
         dispatch({ type: ALL_USERS_SUCCESS, payload: data.users })
     } catch (error) {
