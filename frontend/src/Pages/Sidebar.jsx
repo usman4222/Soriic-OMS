@@ -11,7 +11,8 @@ import { GiReceiveMoney } from "react-icons/gi";
 import { GiTakeMyMoney } from "react-icons/gi";
 import { GiPayMoney } from "react-icons/gi";
 import { IoPeople } from "react-icons/io5";
-import  soriicLogo  from "../assets/sorr.png"
+import soriicLogo from "../assets/sorr.png"
+import { MdDashboard } from "react-icons/md";
 
 
 const Sidebar = () => {
@@ -31,6 +32,11 @@ const Sidebar = () => {
                         </div>
                     </div>
                     <ul>
+                        <li className='md:hidden lg:hidden sm:block'>
+                            <Link className="s-sidebar__nav-link" to="/">
+                                <MdDashboard />Dashboard
+                            </Link>
+                        </li>
                         <li>
                             <Link className="s-sidebar__nav-link" to="/adduser">
                                 <FaUser />Add Employee
