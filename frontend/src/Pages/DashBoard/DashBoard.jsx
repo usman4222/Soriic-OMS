@@ -109,9 +109,9 @@ const DashBoard = () => {
                             <div className='row main-r2'>
                                 <Header />
                             </div>
-                            <div className='row main-r3'>
-                                <div className='col-lg-3 col-md-6 col-sm-12 main-r3-b1'>
-                                    <div className="max-w-sm mx-auto bg-white shadow-lg rounded-md overflow-hidden">
+                            <div className='row main-r3 w-[135%] lg:w-auto'>
+                                <div className='col-lg-3 col-md-6 col-sm-12 main-r3-b1 '>
+                                    <div className="max-w-sm mx-auto bg-white shadow-lg rounded-md overflow-hidden flex justify-center md:w-auto w-[120%]">
                                         <div className="p-4">
                                             <div className="flex items-center">
                                                 <div className="flex items-center justify-center text-6xl bg-green-300 rounded-full h-20 w-20"><GiExpense /></div>
@@ -126,7 +126,7 @@ const DashBoard = () => {
                                     </div>
                                 </div>
                                 <div className='col-lg-3 col-md-6 col-sm-12 main-r3-b1'>
-                                    <div className="max-w-sm mx-auto bg-white shadow-lg rounded-md overflow-hidden">
+                                    <div className="max-w-sm mx-auto bg-white shadow-lg rounded-md overflow-hidden flex justify-center md:w-auto w-[120%]">
                                         <div className="p-4">
                                             <div className="flex items-center">
                                                 <div className="flex items-center justify-center text-6xl bg-blue-200 rounded-full h-20 w-20">
@@ -141,7 +141,7 @@ const DashBoard = () => {
                                     </div>
                                 </div>
                                 <div className='col-lg-3 col-md-6 col-sm-12 main-r3-b1'>
-                                    <div className="max-w-sm mx-auto bg-white shadow-lg rounded-md overflow-hidden">
+                                    <div className="max-w-sm mx-auto bg-white shadow-lg rounded-md overflow-hidden flex justify-center md:w-auto w-[120%]">
                                         <div className="p-4">
                                             <div className="flex items-center justify-center">
                                                 <div className="flex items-center justify-center text-6xl bg-yellow-200 rounded-full h-20 w-20">
@@ -171,8 +171,8 @@ const DashBoard = () => {
                              </div>
                          </div> */}
                             </div>
-                            <div className='row main-r4'>
-                                <div className='col-lg-4 r4-b1'>
+                            <div className='row main-r4 w-[135%] md:w-auto'>
+                                <div className='col-lg-4 r4-b1 '>
                                     <DoughnutChart />
                                 </div>
                                 <div className='col-lg-8 r4-b2'>
