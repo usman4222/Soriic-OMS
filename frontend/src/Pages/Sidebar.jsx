@@ -11,7 +11,7 @@ import { GiReceiveMoney } from "react-icons/gi";
 import { GiTakeMyMoney } from "react-icons/gi";
 import { GiPayMoney } from "react-icons/gi";
 import { IoPeople } from "react-icons/io5";
-
+import  soriicLogo  from "../assets/sorr.png"
 
 
 const Sidebar = () => {
@@ -48,27 +48,27 @@ const Sidebar = () => {
                         </li>
                         {/* {isAuthenticated && user && user.role === "admin" && (
                             <> */}
-                                <li>
-                                    <Link className="s-sidebar__nav-link" to="/finance">
-                                        <GiPayMoney />Add Expense
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link className="s-sidebar__nav-link" to="/allexpenses">
-                                        <HiCurrencyRupee />All Expenses
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link className="s-sidebar__nav-link" to="/revenue">
-                                        <GiReceiveMoney />Add Revenue
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link className="s-sidebar__nav-link" to="/allrevenue">
-                                        <GiTakeMyMoney />All Revenue
-                                    </Link>
-                                </li>
-                            {/* </>
+                        <li>
+                            <Link className="s-sidebar__nav-link" to="/finance">
+                                <GiPayMoney />Add Expense
+                            </Link>
+                        </li>
+                        <li>
+                            <Link className="s-sidebar__nav-link" to="/allexpenses">
+                                <HiCurrencyRupee />All Expenses
+                            </Link>
+                        </li>
+                        <li>
+                            <Link className="s-sidebar__nav-link" to="/revenue">
+                                <GiReceiveMoney />Add Revenue
+                            </Link>
+                        </li>
+                        <li>
+                            <Link className="s-sidebar__nav-link" to="/allrevenue">
+                                <GiTakeMyMoney />All Revenue
+                            </Link>
+                        </li>
+                        {/* </>
                         )} */}
                         {isAuthenticated
                             ?
