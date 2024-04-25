@@ -95,7 +95,7 @@ const ExpenseList = () => {
                             </div>
                             <div className='dashboard'>
                                 <div className='productsListContainer'>
-                                    <h1 className='productListHeading'>Expenses List</h1>
+                                    <h1 className='productListHeading'>Expense List of Current Month</h1>
                                     {rows.length > 0 ? (
                                         <table className='table'>
                                             <thead>

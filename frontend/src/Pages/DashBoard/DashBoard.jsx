@@ -30,10 +30,6 @@ const DashBoard = () => {
     const { totalCurrentMonthRevenue } = useSelector((state) => state.currentMonthRevenue);
     const { expenseList } = useSelector((state) => state.expenseList);
 
-    useEffect(() => {
-        dispatch(getAllUsers);
-    }, [dispatch]);
-
 
     useEffect(() => {
         dispatch(getAllUsers());

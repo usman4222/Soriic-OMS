@@ -83,7 +83,7 @@ const RevenueList = () => {
                             </div>
                             <div className='dashboard'>
                                 <div className='productsListContainer'>
-                                    <h1 className='productListHeading'>Revenues List</h1>
+                                    <h1 className='productListHeading'>Revenue List of Current Month</h1>
                                     {rows.length > 0 ? (
                                         <table className='table'>
                                             <thead>

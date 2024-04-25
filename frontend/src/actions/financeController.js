@@ -49,7 +49,7 @@ export const getExpenseList = () => async (dispatch) => {
     try {
         dispatch({ type: GET_ALL_EXPENSES_LIST_REQUEST });
 
-        const { data } = await axios.get(`https://soriic-b-rana-usmans-projects.vercel.app/api/v1/expenselist`);
+        const { data } = await axios.get(`https://soriic-b-rana-usmans-projects.vercel.app/api/v1/totalexpenseslist`);
         dispatch({ type: GET_ALL_EXPENSES_LIST_SUCCESS, payload: data });
     } catch (error) {
         dispatch({
